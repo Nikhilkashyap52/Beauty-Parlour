@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<style type="text/css">
+
+	.header2{
+  background:rgba(255,0,0, 0.3);
+  color: white;
+  font-family: Arial;
+  font-size: 30px;
+  padding: 3%;
+}
+
+		#header {
+    position: relative;
+    top: -10px;
+    background-color:#F08080;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	color:lavender;
+	height: 40px;
+}
+
+		#wrapper {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    position: relative;
+    top: -10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 3px #444;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+}
+
+h2 {
+    font-family:verdana;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.inputs form{
+    font-family: Verdana, Arial, sans-serif;
+    color: #777;
+	border-top-right-radius:10px;
+	padding:5px;
+}
+
+.btn{
+	background-color:#F08080;
+	color:lavender;
+	padding:8px;
+	border-radius:15px;
+	padding-left:10px;
+	font-family:verdana;
+}
+.btn:hover{
+
+	color:purple;
+	
+}
+	</style>
+
+	<script>
+function submitdata(){
+alert('Thank you!');
+}
+</script>	
+</head>
+<body>
+
+
+
+<nav class="nav">
+<div class="navm">
+	<img src="pic/bee.jpg" height="110" width="300"/>
+	
+<ul class="left">
+<li><a href="home.html"> Home</a></li>
+<li><a href="about.html"> About us</a></li>
+<li><a href="Service.html"> Services</a></li>
+<li><a href="pack.html"> Package</a></li>
+<li><a href="appoint.html"> Appointment</a></li>
+
+</ul>
+</div>
+</nav>
+<div class="header2">
+  Home > Appointment
+  </div>
+
+<br>
+
+
+
+
+	<div id="header"><h2>Appointment</h2></div>
+<div id="wrapper">
+<div id="inputs">
+                <form action="insert.php">
+            	    First name: <input type="text" name="firstname" placeholder="first name" required /><br/><br/>
+            	    Last name: <input type="text" name="lastname" placeholder="last name" required /><br/><br/>
+            	    E-mail: <input type="email" name="email" placeholder="e-mail address" required /><br/><br/>
+					Mobile no: <input type="text" name="number" placeholder="Mobile no" required maxlength="10"/><br/><br/>
+					Categories:<select name="Categories">
+						<option value="HairCuts">HairCuts</option>
+						<option value="HairColor">HairColor</option>
+						<option value="Waxing">Waxing</option>
+						<option value="Facial">Facial</option>
+						<option value="Pedicure & Manicure">Pedicure & Manicure</option>
+					</select>   <br/><br/> 
+
+					Date: <input type="date" name="day"><br><br>               
+                    </form>
+                     <button type="submit" class="btn" id="submit1" onclick="submitdata()" >Submit</button>  
+					
+               
+</div>
+</div
+
+</body>
+</html>
